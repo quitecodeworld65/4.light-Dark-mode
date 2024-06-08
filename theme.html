@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>change theme</title>
+</head>
+
+<body>
+  <h3> change in to dark theme</h3>
+<button onclick="dark()"style="color:black;padding:30px;width:500px;">click me</button>
+</body>
+
+
+  <script>
+  var darkMode = false;
+
+    function dark() {
+      var body = document.body;
+      darkMode = !darkMode;
+
+      if (darkMode) {
+        body.style.backgroundColor = "black";
+        body.style.color = "white";
+      } else {
+        body.style.backgroundColor = "white";
+        body.style.color = "black";
+      }
+    }
+  
+  
+  </script>
+</body>
+
+</html>
